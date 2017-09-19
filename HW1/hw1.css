@@ -1,0 +1,49 @@
+/**
+ * Homework 1: Sets the view
+ *
+ * @author Priyanka Kogta
+ * @version 1
+ */
+
+.root {
+	-fx-background-color: white;
+}
+
+.slider {
+	-fx-orientation: horizontal;
+	-fx-show-tick-labels: true;
+	-fx-show-tick-marks: true;
+	-fx-major-tick-unit: 50;
+	-fx-minor-tick-count: 4;
+	-fx-show-tick-labels: true;
+	-fx-snap-to-ticks: false;
+	-fx-block-increment: 1;
+}
+
+#labelRedValue {
+	-fx-alignment: center-right;
+	-fx-text-fill: red;
+}
+
+#labelGreenValue {
+	-fx-alignment: center-right;
+	-fx-text-fill: green;
+}
+
+#labelBlueValue {
+	-fx-alignment: center-right;
+	-fx-text-fill: blue; 
+}
+
+#labelRedName {
+	-fx-alignment: center;
+}
+
+#labelGreenName {
+	-fx-alignment: center;
+}
+
+#labelBlueName {
+	-fx-alignment: center;
+}
+
