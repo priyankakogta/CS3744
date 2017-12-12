@@ -1,0 +1,141 @@
+/*
+ * Homework 6
+ *
+ * @author Priyanka Kogta
+ * @version 1
+ */
+
+/* Default margins, borders and background color */
+:root, body {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    background-color: ghostwhite;
+}
+
+/* Margin spaces between the window border and the content. */
+body {
+    margin: 2px;
+}
+
+/* Menu button */
+button {
+    font-size: 12pt;
+    border-width: 0;
+    border-radius: 0;
+    outline: none;
+}
+
+/* Menu button when mouse is over it */
+button:hover {
+    background-color: green;
+    color: black;
+}
+
+/* Separator in File menu */
+hr {
+    margin: 0px;
+}
+
+/* Background for menu bar - includes the buttons for menus */
+#menuBar, button {
+    background-color: white;
+}
+
+/* Menu bar */
+#menuBar {
+    width: 100%;
+    outline: 1px solid lightgrey;
+    outline-offset: 2px;
+    margin-bottom: 5px;
+}
+
+/* Slider */
+#slider {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    transform: scaleY(-1);
+}
+
+/* List of numbers for slider */
+#labels {
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 20px;
+}
+
+/* Canvas (light grid) */
+#canvas {
+    position: relative;
+    background-color: black;
+}
+
+/* Menu (list of menu items and button) */
+.menu {
+    position: relative;
+    display: inline-block;
+}
+
+/* List of menu items */
+.menulist {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    outline: 1px solid lightgrey;
+    min-width: 160px;
+}
+
+/* Menu item */
+.menulist a {
+    display: block;
+    padding: 12px 16px;
+    background-color: ghostwhite;
+    color: black;
+    text-decoration: none;
+    cursor: default;
+}
+
+/* Menu item when mouse is over it */
+.menulist a:hover {
+    background-color: green;
+}
+
+/* Block displayed element (a list of menu items) */
+.show {
+    display:block;
+}
+
+/* Disabled element (menu item) */
+.disable {
+    font-style: italic;
+}
+
+/* Modal dialog wrapper */
+#modal {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(0,0,0,0);
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Modal dialog */
+#dialog {
+    position: fixed;
+    padding: 5px;
+    background-color: ghostwhite;
+    outline: 2px solid grey;
+    width: 200px;
+    height: 140px;
+}
+
+/* Modal dialog button*/
+#okButton {
+    width: 50px;
+    height: 20px;
+    background-color: lightblue;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+/*
+ * Homework 6
+ *
+ * @author Priyanka Kogta
+ * @version 1
+ */
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="HW6.css">
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <script type="text/javascript" src="HW6.js"></script>
+    <link rel="icon" type="image/png" href="HW6.png" sizes="32x32" />
+    <script id="vertex-shader" type="x-shader/x-vertex">
+        attribute vec2 vertexPosition;
+        void main(void) {
+            gl_Position = vec4(vertexPosition.x, vertexPosition.y,  0.0, 1.0);
+        }
+    </script>
+    <script id="fragment-shader" type="x-shader/x-fragment">
+        precision mediump float;
+        uniform vec4 color;
+        void main(void) {
+            gl_FragColor = color;
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
